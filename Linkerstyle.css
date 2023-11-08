@@ -1,0 +1,99 @@
+Body{
+    background-color: lightblue;
+    text-align: centre; 
+    min-width: 250px;
+    font-family: Arial, sans-serif;
+}
+
+hr{
+     max-width: 100% ;
+     height: 1px;
+     background-color: rgb(29, 3, 3);
+}
+
+/* Styles for the text input field*/
+.input_container{
+  display: flex;
+ 
+}
+#input-url {
+  margin: 30px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  position: relative; 
+  max-width: 80%;
+  max-height: 80%;
+}
+
+#input-url::after {
+  content: "\f00d"; /* Unicode for 'times' icon (✖) */
+  font-family: "Font Awesome"; 
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #999;
+}
+
+#input-url::after:hover {
+  color: #555;
+}
+
+  /* Styles for the button */
+  button {
+    background-color: #403709; 
+    color: #fff; /* Button text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+button:hover {
+  background-color: #94925e; /* Change this to the color when the button is hovered */
+}
+
+button:active {
+  background-color: #989408; /* Change this to the color when the button is clicked */
+}
+
+/* Styles for the results div with animation */
+#results {
+  display: flex;
+  background-color:white ;
+  max-width: 70%;
+  max-height: 100%;
+  padding: 15px;
+  margin: 30px;
+  font-weight: bold;
+  border-radius: 4px;
+}
+#results::after {
+  content: "";
+  display: block;
+  max-width: 70%;
+  max-height:90%;
+  background-color: #2c0714; /* Color for the progressing bar */
+  animation: progress 10s linear TOP ;
+} /* Customize the animation speed */
+
+
+
+
+
+
+/* Animation for the progress bar */
+@keyframes progress {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+
+
+
+  

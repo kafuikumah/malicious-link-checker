@@ -1,0 +1,1 @@
+const apiQ = 'AIzaSyB1HVgDfQjWfAnYXzgC25c16764TkUlW3s';
